@@ -23,12 +23,9 @@ before_script:
 
 script:
   - python ./decide/manage.py migrate
-  - python ./decide/manage.py test ./decide/store
+  - python ./decide/manage.py test ./decide
 
 notifications:
     email: false
-    
-branches:
-    only:
-    - master
+
    
